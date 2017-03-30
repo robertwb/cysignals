@@ -56,6 +56,7 @@ cdef nogil:
     void _sig_on_recover "_sig_on_recover"()
     void _sig_off_warning "_sig_off_warning"(const char*, int)
 
+# Ensure that these variables are used, to force Cython to cimport them
 cysigs
 _sig_on_interrupt_received
 _sig_on_recover
